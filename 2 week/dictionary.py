@@ -1,4 +1,4 @@
-number = input("Put your number"),
+number = input("Put your number")
 mapping = {
     "1": "One",
     "2": "Two",
@@ -10,7 +10,8 @@ mapping = {
     "8": "Eight",
     "9": "Nine",
     "0": "Zero"
-
 }
-
-print(a)
+output = ""
+for fig in number:
+    output += mapping.get(fig,"!") + " "
+print(output)
