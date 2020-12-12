@@ -1,0 +1,1 @@
+task01_print_min_value()
