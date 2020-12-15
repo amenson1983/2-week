@@ -1,8 +1,8 @@
-numy = 30
+znamen_ = 30
 sum_ = 0
-if numy > 0:
+if znamen_ > 0:
     for x in range(1,31,1):
-        sum_ += x/numy
-        numy -=1
+        sum_ += x/znamen_
+        znamen_ -=1
     print(sum_)
-else: print(")))")
+else: print("Zero divizion")
