@@ -1,5 +1,5 @@
 from _2_week.Homework_2_week.Library import mistake_collect, burn_kikal, budg_analys, dist_don, rain_thic, cels_to_far, \
-    salary_p_day, sum_positive_, ocean_riise
+    salary_p_day, sum_positive_, ocean_riise, edu_rate_increase
 
 if __name__ == '__main__':
     print("Добрый день, ниже представлен список выполненных домашних заданий на вторую неделю:")
@@ -12,6 +12,8 @@ print("6. Таблица соответствия между градусами 
 print("7. Мелкая монета для зарплаты")
 print("8. Сумма чисел")
 print("9. Уровень океана")
+print("10. Рост платы за обучение")
+print("11. Потеря массы")
 
 choice = int(input("Выберите задание на проверку: "))
 if choice == 1:
@@ -32,3 +34,6 @@ if choice == 8:
     sum_positive_()
 if choice == 9:
     ocean_riise()
+if choice == 10:
+    edu_rate_increase()
+if choice == 11:
