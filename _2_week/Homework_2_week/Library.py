@@ -152,3 +152,7 @@ def population_incr():
     for day in range(1, days + 1, 1):
         print(day,"\t\t",round(quant,4))
         quant *= increase_percent
+
+def uzor_11():
+    for num in range(7, 0, -1):
+        print("*" * num)
