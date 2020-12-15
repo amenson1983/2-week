@@ -1,4 +1,4 @@
-from _2_week.Homework_2_week.Library import mistake_collect, burn_kikal, budg_analys, dist_don
+from _2_week.Homework_2_week.Library import mistake_collect, burn_kikal, budg_analys, dist_don, rain_thic
 
 if __name__ == '__main__':
     print("Добрый день, ниже представлен список выполненных домашних заданий на вторую неделю:")
@@ -6,7 +6,7 @@ print("1. Сборщик ошибок")
 print("2. Сожженные калории")
 print("3. Анализ бюджета")
 print("4. Пройденное расстояние")
-
+print("5. Средняя толщина дождевых осадков")
 
 choice = int(input("Выберите задание на проверку: "))
 if choice == 1:
@@ -17,3 +17,5 @@ if choice == 3:
     budg_analys()
 if choice == 4:
     dist_don()
+if choice == 5:
+    rain_thic()
