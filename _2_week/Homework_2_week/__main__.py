@@ -1,5 +1,5 @@
 from _2_week.Homework_2_week.Library import mistake_collect, burn_kikal, budg_analys, dist_don, rain_thic, cels_to_far, \
-    salary_p_day, sum_positive_, ocean_riise, edu_rate_increase
+    salary_p_day, sum_positive_, ocean_riise, edu_rate_increase, mass_loose
 
 if __name__ == '__main__':
     print("Добрый день, ниже представлен список выполненных домашних заданий на вторую неделю:")
@@ -37,3 +37,4 @@ if choice == 9:
 if choice == 10:
     edu_rate_increase()
 if choice == 11:
+    mass_loose()

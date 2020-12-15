@@ -121,3 +121,12 @@ def edu_rate_increase():
         annual_rate = annual_rate_for
         sem_forecast = annual_rate_for / 2
         print(year, sem_forecast)
+
+def mass_loose():
+    mass_base = float(input("Введите свою массу: "))
+    loose_kg = 1.5
+    print("Месяц \t\tНовый вес")
+    print("*" * 21)
+    for month in range(1, 7, 1):
+        mass_base = mass_base - loose_kg
+        print(month, "\t\t\t", mass_base)
