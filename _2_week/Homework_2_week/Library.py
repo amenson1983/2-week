@@ -22,3 +22,9 @@ def mistake_collect():
         mist_day = int(input("Введите количество ошибок за день: "))
         summary += mist_day
     print("Общее количество ошибок: ", summary)
+
+def burn_kikal():
+    kkal_per_min = float(input("Введите количество Ккал, сжигаемых в минуту: "))
+    for minutes in range(10, 31, 5):
+        kkal = minutes * kkal_per_min
+        print(kkal)
