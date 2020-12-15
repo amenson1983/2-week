@@ -4,6 +4,8 @@ from _2_week.Homework_2_week.Library import mistake_collect, burn_kikal, budg_an
 
 if __name__ == '__main__':
     print("Добрый день, Максим, ниже представлен список выполненных домашних заданий на вторую неделю:")
+print("\t\tГЛАВА 4","\t\t\t\t\t\t\t\tГЛАВА 5")
+print("*"*80)
 print("1. \tСборщик ошибок")
 print("2. \tСожженные калории")
 print("3. \tАнализ бюджета")
