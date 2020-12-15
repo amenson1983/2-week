@@ -90,3 +90,13 @@ def salary_p_day():
         print(day, "\t\t\t", day_pay)
     sum_hrn = sum_coin / 100
     print("Общая з/п до вычета налогов: ", sum_hrn, "грн")
+
+def sum_positive_():
+    row = 0
+    sum = 0
+    while row >= 0:
+        row = int(input("Введите положительное число 'отрицательное означает выход': "))
+        if row < 0:
+            break
+        sum += row
+    print("Сумма = ", sum)
