@@ -1,5 +1,5 @@
 from _2_week.Homework_2_week.Library import mistake_collect, burn_kikal, budg_analys, dist_don, rain_thic, cels_to_far, \
-    salary_p_day, sum_positive_, ocean_riise, edu_rate_increase, mass_loose, factorial_calc
+    salary_p_day, sum_positive_, ocean_riise, edu_rate_increase, mass_loose, factorial_calc, population_incr
 
 if __name__ == '__main__':
     print("Добрый день, ниже представлен список выполненных домашних заданий на вторую неделю:")
@@ -15,6 +15,7 @@ print("9. Уровень океана")
 print("10. Рост платы за обучение")
 print("11. Потеря массы")
 print("12. Вычисление факториала числа")
+print("13. Популяция")
 
 choice = int(input("Выберите задание на проверку: "))
 if choice == 1:
@@ -41,3 +42,5 @@ if choice == 11:
     mass_loose()
 if choice == 12:
     factorial_calc()
+if choice == 13:
+    population_incr()

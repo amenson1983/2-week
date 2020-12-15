@@ -141,3 +141,14 @@ def factorial_calc():
         for part in range(1, number + 1, 1):
             inter *= part
     print(inter)
+
+def population_incr():
+    quant = int(input("Стартовое количество организмов: "))
+    increase = int(input("Среднесуточное увеличение (%): "))
+    increase_percent = 1 + (increase / 100)
+    days = int(input("Количество дней для размножения: "))
+    print("День\t\t\tПопуляция")
+    print("*"*24)
+    for day in range(1, days + 1, 1):
+        print(day,"\t\t",round(quant,4))
+        quant *= increase_percent
