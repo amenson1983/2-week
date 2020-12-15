@@ -156,3 +156,8 @@ def population_incr():
 def uzor_11():
     for num in range(7, 0, -1):
         print("*" * num)
+
+def uzor_22():
+    print("#", "#")
+    for num in range(0, 5, 1):
+        print("#", " " * num, "#")

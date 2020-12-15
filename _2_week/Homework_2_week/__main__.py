@@ -1,23 +1,24 @@
 from _2_week.Homework_2_week.Library import mistake_collect, burn_kikal, budg_analys, dist_don, rain_thic, cels_to_far, \
-    salary_p_day, sum_positive_, ocean_riise, edu_rate_increase, mass_loose, factorial_calc, population_incr, uzor_11
+    salary_p_day, sum_positive_, ocean_riise, edu_rate_increase, mass_loose, factorial_calc, population_incr, uzor_11, \
+    uzor_22
 
 if __name__ == '__main__':
-    print("Добрый день, ниже представлен список выполненных домашних заданий на вторую неделю:")
-print("1. Сборщик ошибок")
-print("2. Сожженные калории")
-print("3. Анализ бюджета")
-print("4. Пройденное расстояние")
-print("5. Средняя толщина дождевых осадков")
-print("6. Таблица соответствия между градусами Цельсия и Фаренгейта")
-print("7. Мелкая монета для зарплаты")
-print("8. Сумма чисел")
-print("9. Уровень океана")
+    print("Добрый день, Максим, ниже представлен список выполненных домашних заданий на вторую неделю:")
+print("1. \tСборщик ошибок")
+print("2. \tСожженные калории")
+print("3. \tАнализ бюджета")
+print("4. \tПройденное расстояние")
+print("5. \tСредняя толщина дождевых осадков")
+print("6. \tТаблица соответствия между \n\tградусами Цельсия и Фаренгейта")
+print("7. \tМелкая монета для зарплаты")
+print("8. \tСумма чисел")
+print("9. \tУровень океана")
 print("10. Рост платы за обучение")
 print("11. Потеря массы")
 print("12. Вычисление факториала числа")
 print("13. Популяция")
 print("14. Узор-1")
-
+print("14. Узор-2")
 choice = int(input("Выберите задание на проверку: "))
 if choice == 1:
     mistake_collect()
@@ -47,3 +48,5 @@ if choice == 13:
     population_incr()
 if choice == 14:
     uzor_11()
+if choice == 15:
+    uzor_22()
