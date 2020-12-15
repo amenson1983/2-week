@@ -1,7 +1,6 @@
 def division_of_2_rows(x,y):
         Div_2_rows()
 
-
 def Div_2_rows():
     znamen_ = int(input("Введите конечное число ряда знаменателя (целое):"))
     nach_chisl = int(input("Введите начальное число ряда числителя (целое):"))
@@ -15,3 +14,11 @@ def Div_2_rows():
         print(sum_)
     else:
         print("Zero divizion")
+
+def mistake_collect():
+    days = int(input("Сколько дней будем обозревать?"))
+    summary = 0
+    for x in range(days):
+        mist_day = int(input("Введите количество ошибок за день: "))
+        summary += mist_day
+    print("Общее количество ошибок: ", summary)
