@@ -130,3 +130,14 @@ def mass_loose():
     for month in range(1, 7, 1):
         mass_base = mass_base - loose_kg
         print(month, "\t\t\t", mass_base)
+
+def factorial_calc():
+    number = int(input("Введите не отрицательное число: "))
+    factorial = 1
+    inter = 1
+    if number <= 0:
+        print("Я сказал - НЕ ОТРИЦАТЕЛЬНОЕ!")
+    else:
+        for part in range(1, number + 1, 1):
+            inter *= part
+    print(inter)
