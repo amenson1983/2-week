@@ -190,3 +190,13 @@ def tax_calc_():
     amount += federal + regional
     print("Общая сумма:", amount,
           "\nВ том числе налоги:", "\nФедеральный налог: ", federal, "\nРегиональный налог: ", regional)
+
+def insur_min_amou():
+    x = float(input("Введите стоимость строения: "))
+    min_am = x * 0.8
+    return x, min_am
+
+def ins_min_sum():
+    cost, min_ins_am = insur_min_amou()
+    print("Общая стоимость строения:", cost,
+          "\nМинимальная сумма замещения: ", min_ins_am)
