@@ -161,3 +161,20 @@ def uzor_22():
     print("#", "#")
     for num in range(0, 5, 1):
         print("#", " " * num, "#")
+
+def percentage_from_(amount, rate):
+    percentage = amount * (rate / 100)
+    return percentage
+
+def get_name_surname():
+    name = input("Введите своё имя: ")
+    surname = input("Введите свою фамилию: ")
+    return surname, name
+
+def kilom_convert(x):
+        miles = round((x*0.6214),2)
+        return miles
+
+def kilom_konvert():
+    km = float(input("Введите расстояние в километрах:"))
+    print("Расстояние в км: ", km, "\nРасстояние в милях:", kilom_convert(km))
