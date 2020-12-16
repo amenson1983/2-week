@@ -320,3 +320,13 @@ def falling_distance():
         g = 9.8
         distance = 1 / 2 * (g * (time_sec ** 2))
         print(time_sec, "\t\t\t\t", round(distance, 2))
+
+def cynetic(m,v):
+    energy = 1/2*(m*(v**2))
+    return energy
+
+def cynetic_energy_calc():
+    mass = float(input("Введите массу тела, кг: "))
+    speed = float(input("Введите скорость, м\с: "))
+    energy = cynetic(mass, speed)
+    print("Кинетическая энергия: ", round(energy, 2))
