@@ -330,3 +330,32 @@ def cynetic_energy_calc():
     speed = float(input("Введите скорость, м\с: "))
     energy = cynetic(mass, speed)
     print("Кинетическая энергия: ", round(energy, 2))
+
+def calc_aver_():
+    a = int(input("Введите оценку 1: "))
+    b = int(input("Введите оценку 2: "))
+    c = int(input("Введите оценку 3: "))
+    d = int(input("Введите оценку 4: "))
+    e = int(input("Введите оценку 5: "))
+    sum = a + b + c + d + e
+    aver_ = sum / 5
+    return aver_,a,b,c,d,e
+
+def determine_grade(classif):
+    grade = ""
+    if classif < 60:
+        grade = "F"
+    elif classif >=60 and classif <70:
+        grade = "D"
+    elif classif>=70 and classif<80:
+        grade = "C"
+    elif classif>=80 and classif<90:
+        grade = "B"
+    else: grade = "A"
+    return grade
+def aver_grade():
+    average, a, b, c, d, e = calc_aver_()
+    for num in [a, b, c, d, e]:
+        grade = determine_grade(num)
+        print(num, grade)
+    print("Средний балл: ", average)
