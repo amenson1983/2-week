@@ -1,7 +1,7 @@
 from _2_week.Homework_2_week.Library import mistake_collect, burn_kikal, budg_analys, dist_don, rain_thic, cels_to_far, \
     salary_p_day, sum_positive_, ocean_riise, edu_rate_increase, mass_loose, factorial_calc, population_incr, uzor_11, \
     uzor_22, kilom_konvert, tax_calc_, ins_min_sum, car_expen, tax_estate_calculation, calor_f_c, incom_stadium_seats, \
-    paint_calculation
+    paint_calculation, sales_tax_calculate, foot_inch_convert, math_test
 
 
 def main():
@@ -16,9 +16,9 @@ print("5. \tСредняя толщина дождевых осадков","\t\t
 print("6. \tТаблица соответствия между,","\t\t\t21.Калории за счёт жиров и углеводов", "\n\tградусами Цельсия и Фаренгейта")
 print("7. \tМелкая монета для зарплаты","\t\t\t\t22.Сидячие места на стадионе")
 print("8. \tСумма чисел","\t\t\t\t\t\t\t23.Оценщик малярных работ")
-print("9. \tУровень океана")
-print("10. Рост платы за обучение")
-print("11. Потеря массы")
+print("9. \tУровень океана","\t\t\t\t\t\t\t24.Месячный налог с продаж")
+print("10. Рост платы за обучение","\t\t\t\t\t25.Футы в дюймы")
+print("11. Потеря массы","\t\t\t\t\t\t\t26.Математический тест")
 print("12. Вычисление факториала числа")
 print("13. Популяция")
 print("14. Узор-1")
@@ -70,3 +70,9 @@ if choice == 22:
     incom_stadium_seats()
 if choice == 23:
     paint_calculation()
+if choice == 24:
+    sales_tax_calculate()
+if choice == 25:
+    foot_inch_convert()
+if choice == 26:
+    math_test()

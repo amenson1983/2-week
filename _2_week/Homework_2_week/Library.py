@@ -268,3 +268,40 @@ def paint_calculation():
     print("Количество 5л банок: ", quant_5l_paint, "шт", "\nКоличество часов на работу: ", work_hours, "часов",
           "\nСтоимость краски: ", paint_cost, "грн", "\nСтоимость работы: ", work_cost, "грн", "\nИТОГО: ", total_cost,
           "грн")
+def get_sales_calc_tax():
+    x = float(input("Введите сумму продажи: "))
+    fed = x*0.05
+    reg = x*0.025
+    return fed, reg
+
+def tax_sales_calc_():
+    federal, regional = get_sales_calc_tax()
+    amount_tax = 0
+    amount_tax += federal + regional
+    print("Общая сумма налогов:", amount_tax,
+          "\nВ том числе:", "\nФедеральный налог: ", federal, "\nРегиональный налог: ", regional)
+
+def sales_tax_calculate():
+    amount = 0
+    print = tax_sales_calc_()
+
+def foot_convert():
+    foot = float(input("Введите расстояние в километрах:"))
+    inch = round((foot * 12), 2)
+    return foot,inch
+
+def foot_inch_convert():
+    foot, inch = foot_convert()
+    print("Длинна в футах: ", foot, "\nДлина в дюймах:", inch)
+
+def math_test():
+    import random
+    num1 = random.randint(1, 1000)
+    num2 = random.randint(1, 1000)
+    total = num1 + num2
+    print("\n\t", num1, "\n+\t", num2, "\n=\t")
+    answer = int(input("Введите ответ:"))
+    if answer == total:
+        print("Поздравляем, ответ верный!")
+    else:
+        print("\n\t", num1, "\n+\t", num2, "\n=\t", total)
