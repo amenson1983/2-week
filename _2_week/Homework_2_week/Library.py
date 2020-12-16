@@ -223,3 +223,14 @@ def tax_estate_calculation():
     tax_100 = 0.72 * (eval_cost / 100)
     print("Фактическая соимость недвижимости: ", tot_cost, "$", "\nОценочная соимость недвижимости: ", eval_cost, "$",
           "\nСумма налогов к уплате: ", round(tax_100, 2), "$")
+
+def calor_calc():
+    fats = float(input("Введите количество грамм жиров, которое Вы употребили за день: "))
+    carbohydrades = float(input("Введите количество грамм углеводов, которое Вы употребили за день: "))
+    calor_fats = fats * 9
+    calor_carbohyd = carbohydrades * 4
+    return calor_fats, calor_carbohyd
+
+def calor_f_c():
+    calor_fr_fats, calor_from_carbo = calor_calc()
+    print("Калории полученные от жиров", calor_fr_fats, "\nКалории полученные от углеводов", calor_from_carbo)
