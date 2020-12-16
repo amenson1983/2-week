@@ -234,3 +234,17 @@ def calor_calc():
 def calor_f_c():
     calor_fr_fats, calor_from_carbo = calor_calc()
     print("Калории полученные от жиров", calor_fr_fats, "\nКалории полученные от углеводов", calor_from_carbo)
+
+def get_quant_seats():
+    class_a= int(input("Введите количество проданных билетов на места класса А: "))
+    class_b = int(input("Введите количество проданных билетов на места класса B: "))
+    class_c = int(input("Введите количество проданных билетов на места класса C: "))
+    income_a = class_a*20
+    income_b = class_b*15
+    income_c = class_c*10
+    return income_a, income_b, income_c
+
+def incom_stadium_seats():
+    a, b, c = get_quant_seats()
+    print("Доход от продажи мест класса А:", a, "грн", "\nДоход от продажи мест класса В:", b, "грн",
+          "\nДоход от продажи мест класса С:", c, "грн")
