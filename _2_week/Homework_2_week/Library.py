@@ -178,3 +178,15 @@ def kilom_convert(x):
 def kilom_konvert():
     km = float(input("Введите расстояние в километрах:"))
     print("Расстояние в км: ", km, "\nРасстояние в милях:", kilom_convert(km))
+
+def get_amount_calc_tax():
+    x = float(input("Введите сумму покупки: "))
+    fed = x*0.05
+    reg = x*0.025
+    return x, fed, reg
+
+def tax_calc_():
+    amount, federal, regional = get_amount_calc_tax()
+    amount += federal + regional
+    print("Общая сумма:", amount,
+          "\nВ том числе налоги:", "\nФедеральный налог: ", federal, "\nРегиональный налог: ", regional)

@@ -1,13 +1,13 @@
 from _2_week.Homework_2_week.Library import mistake_collect, burn_kikal, budg_analys, dist_don, rain_thic, cels_to_far, \
     salary_p_day, sum_positive_, ocean_riise, edu_rate_increase, mass_loose, factorial_calc, population_incr, uzor_11, \
-    uzor_22, kilom_konvert
+    uzor_22, kilom_konvert, tax_calc_
 
 if __name__ == '__main__':
     print("Добрый день, Максим, ниже представлен список выполненных домашних заданий на вторую неделю:")
 print("\t\tГЛАВА 4","\t\t\t\t\t\t\t\tГЛАВА 5")
 print("*"*80)
 print("1. \tСборщик ошибок", "\t\t\t\t\t\t\t16.Конвертер километров")
-print("2. \tСожженные калории")
+print("2. \tСожженные калории", "\t\t\t\t\t\t17.Модернизация программы расчета налога с продаж")
 print("3. \tАнализ бюджета")
 print("4. \tПройденное расстояние")
 print("5. \tСредняя толщина дождевых осадков")
@@ -54,3 +54,5 @@ if choice == 15:
     uzor_22()
 if choice == 16:
     kilom_konvert()
+if choice == 17:
+    tax_calc_()
