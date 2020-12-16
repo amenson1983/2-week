@@ -1,6 +1,6 @@
 from _2_week.Homework_2_week.Library import mistake_collect, burn_kikal, budg_analys, dist_don, rain_thic, cels_to_far, \
     salary_p_day, sum_positive_, ocean_riise, edu_rate_increase, mass_loose, factorial_calc, population_incr, uzor_11, \
-    uzor_22, kilom_konvert, tax_calc_, ins_min_sum
+    uzor_22, kilom_konvert, tax_calc_, ins_min_sum, car_expen
 
 if __name__ == '__main__':
     print("Добрый день, Максим, ниже представлен список выполненных домашних заданий на вторую неделю:")
@@ -9,7 +9,7 @@ print("*"*80)
 print("1. \tСборщик ошибок", "\t\t\t\t\t\t\t16.Конвертер километров")
 print("2. \tСожженные калории", "\t\t\t\t\t\t17.Модернизация программы расчета налога с продаж")
 print("3. \tАнализ бюджета", "\t\t\t\t\t\t\t18.Какова стоимость страховки?")
-print("4. \tПройденное расстояние")
+print("4. \tПройденное расстояние","\t\t\t\t\t19.Расходы на автомобиль")
 print("5. \tСредняя толщина дождевых осадков")
 print("6. \tТаблица соответствия между \n\tградусами Цельсия и Фаренгейта")
 print("7. \tМелкая монета для зарплаты")
@@ -58,3 +58,5 @@ if choice == 17:
     tax_calc_()
 if choice == 18:
     ins_min_sum()
+if choice == 19:
+    car_expen()
