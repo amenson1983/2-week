@@ -248,3 +248,23 @@ def incom_stadium_seats():
     a, b, c = get_quant_seats()
     print("Доход от продажи мест класса А:", a, "грн", "\nДоход от продажи мест класса В:", b, "грн",
           "\nДоход от продажи мест класса С:", c, "грн")
+
+def paint_work_calc():
+    sq_m = float(input("Введите количество квадратных метров для покраски: "))
+    paint_price = float(input("Введите цену краски (5л): "))
+    paint_price1l = paint_price / 5
+    work_cost1h = 2000
+    need_paint = (sq_m / 10) * 5
+    need_paint5l = need_paint / 5
+    need_work = (sq_m / 10) * 8
+    paint_cost = need_paint * paint_price1l
+    work_cost = need_work * work_cost1h
+    return need_paint5l, need_work, paint_cost, work_cost
+
+def paint_calculation():
+    total_cost = 0
+    quant_5l_paint, work_hours, paint_cost, work_cost = paint_work_calc()
+    total_cost += paint_cost + work_cost
+    print("Количество 5л банок: ", quant_5l_paint, "шт", "\nКоличество часов на работу: ", work_hours, "часов",
+          "\nСтоимость краски: ", paint_cost, "грн", "\nСтоимость работы: ", work_cost, "грн", "\nИТОГО: ", total_cost,
+          "грн")

@@ -1,6 +1,7 @@
 from _2_week.Homework_2_week.Library import mistake_collect, burn_kikal, budg_analys, dist_don, rain_thic, cels_to_far, \
     salary_p_day, sum_positive_, ocean_riise, edu_rate_increase, mass_loose, factorial_calc, population_incr, uzor_11, \
-    uzor_22, kilom_konvert, tax_calc_, ins_min_sum, car_expen, tax_estate_calculation, calor_f_c, incom_stadium_seats
+    uzor_22, kilom_konvert, tax_calc_, ins_min_sum, car_expen, tax_estate_calculation, calor_f_c, incom_stadium_seats, \
+    paint_calculation
 
 
 def main():
@@ -14,7 +15,7 @@ print("4. \tПройденное расстояние","\t\t\t\t\t19.Расхо�
 print("5. \tСредняя толщина дождевых осадков","\t\t20.Налог на недвижимое имущество")
 print("6. \tТаблица соответствия между,","\t\t\t21.Калории за счёт жиров и углеводов", "\n\tградусами Цельсия и Фаренгейта")
 print("7. \tМелкая монета для зарплаты","\t\t\t\t22.Сидячие места на стадионе")
-print("8. \tСумма чисел")
+print("8. \tСумма чисел","\t\t\t\t\t\t\t23.Оценщик малярных работ")
 print("9. \tУровень океана")
 print("10. Рост платы за обучение")
 print("11. Потеря массы")
@@ -67,3 +68,5 @@ if choice == 21:
     calor_f_c()
 if choice == 22:
     incom_stadium_seats()
+if choice == 23:
+    paint_calculation()
