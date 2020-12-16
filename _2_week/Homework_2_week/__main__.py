@@ -1,7 +1,7 @@
 from _2_week.Homework_2_week.Library import mistake_collect, burn_kikal, budg_analys, dist_don, rain_thic, cels_to_far, \
     salary_p_day, sum_positive_, ocean_riise, edu_rate_increase, mass_loose, factorial_calc, population_incr, uzor_11, \
     uzor_22, kilom_konvert, tax_calc_, ins_min_sum, car_expen, tax_estate_calculation, calor_f_c, incom_stadium_seats, \
-    paint_calculation, sales_tax_calculate, foot_inch_convert, math_test, max_of_two
+    paint_calculation, sales_tax_calculate, foot_inch_convert, math_test, max_of_two, falling_distance
 
 
 def main():
@@ -20,7 +20,7 @@ print("9. \tУровень океана","\t\t\t\t\t\t\t24.Месячный на
 print("10. Рост платы за обучение","\t\t\t\t\t25.Футы в дюймы")
 print("11. Потеря массы","\t\t\t\t\t\t\t26.Математический тест")
 print("12. Вычисление факториала числа","\t\t\t27.Максимальное из двух значений")
-print("13. Популяция")
+print("13. Популяция","\t\t\t\t\t\t\t\t28.Высота падения")
 print("14. Узор-1")
 print("15. Узор-2")
 choice = int(input("Выберите задание на проверку: "))
@@ -78,3 +78,5 @@ if choice == 26:
     math_test()
 if choice == 27:
     max_of_two()
+if choice == 28:
+    falling_distance()
