@@ -305,3 +305,9 @@ def math_test():
         print("Поздравляем, ответ верный!")
     else:
         print("\n\t", num1, "\n+\t", num2, "\n=\t", total)
+
+def max_of_two():
+    num1 = int(input("Введите число 1: "))
+    num2 = int(input("Введите число 2: "))
+    max_ = max(num1, num2)
+    print(max_)
