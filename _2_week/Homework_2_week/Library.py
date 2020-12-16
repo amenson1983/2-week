@@ -213,3 +213,13 @@ def car_expen():
         summary += num
     print("Стоимость обслуживания в месяц: ", summary, "грн"
                                                        "\nСтоимость годового обслуживания: ", summary * 12, "грн")
+def insur_min_amou1():
+    x = float(input("Введите стоимость строения: "))
+    eval_cost = x * 0.6
+    return x, eval_cost
+
+def tax_estate_calculation():
+    tot_cost, eval_cost = insur_min_amou1()
+    tax_100 = 0.72 * (eval_cost / 100)
+    print("Фактическая соимость недвижимости: ", tot_cost, "$", "\nОценочная соимость недвижимости: ", eval_cost, "$",
+          "\nСумма налогов к уплате: ", round(tax_100, 2), "$")
