@@ -404,7 +404,7 @@ def sales_tax_calculate():
     main()
 
 def foot_convert():
-    foot = float(input("Введите расстояние в километрах:"))
+    foot = float(input("Введите длинну в футах:"))
     inch = round((foot * 12), 2)
     return foot,inch
 
