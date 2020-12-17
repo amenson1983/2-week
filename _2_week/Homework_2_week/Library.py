@@ -1,5 +1,94 @@
-def division_of_2_rows(x,y):
-        Div_2_rows()
+def main():
+    print("Добрый день, Максим, ниже представлен список выполненных домашних заданий на вторую неделю:")
+    print("\t\tГЛАВА 4", "\t\t\t\t\t\t\t\tГЛАВА 5")
+    print("*" * 80)
+    print("1. \tСборщик ошибок", "\t\t\t\t\t\t\t16.Конвертер километров")
+    print("2. \tСожженные калории", "\t\t\t\t\t\t17.Модернизация программы расчета налога с продаж")
+    print("3. \tАнализ бюджета", "\t\t\t\t\t\t\t18.Какова стоимость страховки?")
+    print("4. \tПройденное расстояние", "\t\t\t\t\t19.Расходы на автомобиль")
+    print("5. \tСредняя толщина дождевых осадков", "\t\t20.Налог на недвижимое имущество")
+    print("6. \tТаблица соответствия между,", "\t\t\t21.Калории за счёт жиров и углеводов",
+          "\n\tградусами Цельсия и Фаренгейта")
+    print("7. \tМелкая монета для зарплаты", "\t\t\t\t22.Сидячие места на стадионе")
+    print("8. \tСумма чисел", "\t\t\t\t\t\t\t23.Оценщик малярных работ")
+    print("9. \tУровень океана", "\t\t\t\t\t\t\t24.Месячный налог с продаж")
+    print("10. Рост платы за обучение", "\t\t\t\t\t25.Футы в дюймы")
+    print("11. Потеря массы", "\t\t\t\t\t\t\t26.Математический тест")
+    print("12. Вычисление факториала числа", "\t\t\t27.Максимальное из двух значений")
+    print("13. Популяция", "\t\t\t\t\t\t\t\t28.Высота падения")
+    print("14. Узор-1", "\t\t\t\t\t\t\t\t\t29.Кинетическая энергия")
+    print("15. Узор-2", "\t\t\t\t\t\t\t\t\t30.Средний балл и его уровень")
+    print("\t\t\t\t\t\t\t\t\t\t\t31.Счётчик четных/нечетных чисел")
+    print("\t\t\t\t\t\t\t\t\t\t\t32.Простые числа")
+    print("0. ВЫХОД")
+    choice = int(input("Выберите задание на проверку: "))
+    while choice != 0:
+        if choice == 1:
+            mist_collect()
+        elif choice == 2:
+            burn_kikal()
+        elif choice == 3:
+            budg_analys()
+        elif choice == 4:
+            dist_don()
+        elif choice == 5:
+            rain_thic()
+        elif choice == 6:
+            cels_to_far()
+        elif choice == 7:
+            salary_p_day()
+        elif choice == 8:
+            sum_positive_()
+        elif choice == 9:
+            ocean_riise()
+        elif choice == 10:
+            edu_rate_increase()
+        elif choice == 11:
+            mass_loose()
+        elif choice == 12:
+            factorial_calc()
+        elif choice == 13:
+            population_incr()
+        elif choice == 14:
+            uzor_11()
+        elif choice == 15:
+            uzor_22()
+        elif choice == 16:
+            kilom_konvert()
+        elif choice == 17:
+            tax_calc_()
+        elif choice == 18:
+            ins_min_sum()
+        elif choice == 19:
+            car_expen()
+        elif choice == 20:
+            tax_estate_calculation()
+        elif choice == 21:
+            calor_f_c()
+        elif choice == 22:
+            incom_stadium_seats()
+        elif choice == 23:
+            paint_calculation()
+        elif choice == 24:
+            sales_tax_calculate()
+        elif choice == 25:
+            foot_inch_convert()
+        elif choice == 26:
+            math_test()
+        elif choice == 27:
+            max_of_two()
+        elif choice == 28:
+            falling_distance()
+        elif choice == 29:
+            cynetic_energy_calc()
+        elif choice == 30:
+            aver_grade()
+        elif choice == 31:
+            chet_nechet_count()
+        elif choice == 32:
+            simple_figure_calc()
+        elif choice == 0:
+            print("До свидания!")
 
 def Div_2_rows():
     znamen_ = int(input("Введите конечное число ряда знаменателя (целое):"))
@@ -23,11 +112,18 @@ def mistake_collect():
         summary += mist_day
     print("Общее количество ошибок: ", summary)
 
+def mist_collect():
+    x = input("Continue?: (type 'y' if yes)")
+    if x =="y":
+        mistake_collect()
+    main()
+
 def burn_kikal():
     kkal_per_min = float(input("Введите количество Ккал, сжигаемых в минуту: "))
     for minutes in range(10, 31, 5):
         kkal = minutes * kkal_per_min
         print(kkal)
+    main()
 
 def budg_analys():
     amount_ = float(input("Введите сумму Вашего бюджета на месяц: "))
@@ -44,6 +140,7 @@ def budg_analys():
         print("Экономия составляет: ", amount_ - summary, "грн")
     elif summary > amount_ or summary == amount_:
         print("Дефицит составляет: ", amount_ - summary, "грн")
+    main()
 
 def dist_don():
     dist = 0
@@ -54,6 +151,7 @@ def dist_don():
     for hour in range(0, time + 1, 1):
         dist = hour * speed
         print(hour, "\t", dist)
+    main()
 
 def rain_thic():
     years = int(input("Укажите количество лет: "))
@@ -68,6 +166,7 @@ def rain_thic():
     print("Средняя толщина осадков за период в месяц: ", average)
     print("Общяя толщина осадков за период: ", tot_thick)
     print("Общее количество месяцев: ", month_quant * years)
+    main()
 
 def cels_to_far():
     temp_far = 0
@@ -76,6 +175,7 @@ def cels_to_far():
     for temp in range(0, 21, 1):
         temp_far = ((9 * temp) / 5) + 32
         print(temp, "\t\t", temp_far)
+    main()
 
 def salary_p_day():
     q_days = int(input("Введите количество дней: "))
@@ -90,6 +190,7 @@ def salary_p_day():
         print(day, "\t\t\t", day_pay)
     sum_hrn = sum_coin / 100
     print("Общая з/п до вычета налогов: ", sum_hrn, "грн")
+    main()
 
 def sum_positive_():
     row = 0
@@ -100,6 +201,7 @@ def sum_positive_():
             break
         sum += row
     print("Сумма = ", sum)
+    main()
 
 def ocean_riise():
     mm_per_year = 1.6
@@ -109,6 +211,7 @@ def ocean_riise():
     for years in range(1, 26, 1):
         sum += mm_per_year
         print(years, "\t\t\t\t", round(sum, 2))
+    main()
 
 def edu_rate_increase():
     curr_rate_sem = 45000
@@ -121,6 +224,7 @@ def edu_rate_increase():
         annual_rate = annual_rate_for
         sem_forecast = annual_rate_for / 2
         print(year, sem_forecast)
+    main()
 
 def mass_loose():
     mass_base = float(input("Введите свою массу: "))
@@ -130,6 +234,7 @@ def mass_loose():
     for month in range(1, 7, 1):
         mass_base = mass_base - loose_kg
         print(month, "\t\t\t", mass_base)
+    main()
 
 def factorial_calc():
     number = int(input("Введите не отрицательное число: "))
@@ -141,6 +246,7 @@ def factorial_calc():
         for part in range(1, number + 1, 1):
             inter *= part
     print(inter)
+    main()
 
 def population_incr():
     quant = int(input("Стартовое количество организмов: "))
@@ -152,15 +258,18 @@ def population_incr():
     for day in range(1, days + 1, 1):
         print(day,"\t\t",round(quant,4))
         quant *= increase_percent
+    main()
 
 def uzor_11():
     for num in range(7, 0, -1):
         print("*" * num)
+    main()
 
 def uzor_22():
     print("#", "#")
     for num in range(0, 5, 1):
         print("#", " " * num, "#")
+    main()
 
 def percentage_from_(amount, rate):
     percentage = amount * (rate / 100)
@@ -178,6 +287,7 @@ def kilom_convert(x):
 def kilom_konvert():
     km = float(input("Введите расстояние в километрах:"))
     print("Расстояние в км: ", km, "\nРасстояние в милях:", kilom_convert(km))
+    main()
 
 def get_amount_calc_tax():
     x = float(input("Введите сумму покупки: "))
@@ -190,6 +300,7 @@ def tax_calc_():
     amount += federal + regional
     print("Общая сумма:", amount,
           "\nВ том числе налоги:", "\nФедеральный налог: ", federal, "\nРегиональный налог: ", regional)
+    main()
 
 def insur_min_amou():
     x = float(input("Введите стоимость строения: "))
@@ -200,6 +311,7 @@ def ins_min_sum():
     cost, min_ins_am = insur_min_amou()
     print("Общая стоимость строения:", cost,
           "\nМинимальная сумма замещения: ", min_ins_am)
+    main()
 
 def car_expen():
     summary = 0
@@ -213,6 +325,8 @@ def car_expen():
         summary += num
     print("Стоимость обслуживания в месяц: ", summary, "грн"
                                                        "\nСтоимость годового обслуживания: ", summary * 12, "грн")
+    main()
+
 def insur_min_amou1():
     x = float(input("Введите стоимость строения: "))
     eval_cost = x * 0.6
@@ -223,6 +337,7 @@ def tax_estate_calculation():
     tax_100 = 0.72 * (eval_cost / 100)
     print("Фактическая соимость недвижимости: ", tot_cost, "$", "\nОценочная соимость недвижимости: ", eval_cost, "$",
           "\nСумма налогов к уплате: ", round(tax_100, 2), "$")
+    main()
 
 def calor_calc():
     fats = float(input("Введите количество грамм жиров, которое Вы употребили за день: "))
@@ -234,6 +349,7 @@ def calor_calc():
 def calor_f_c():
     calor_fr_fats, calor_from_carbo = calor_calc()
     print("Калории полученные от жиров", calor_fr_fats, "\nКалории полученные от углеводов", calor_from_carbo)
+    main()
 
 def get_quant_seats():
     class_a= int(input("Введите количество проданных билетов на места класса А: "))
@@ -248,6 +364,7 @@ def incom_stadium_seats():
     a, b, c = get_quant_seats()
     print("Доход от продажи мест класса А:", a, "грн", "\nДоход от продажи мест класса В:", b, "грн",
           "\nДоход от продажи мест класса С:", c, "грн")
+    main()
 
 def paint_work_calc():
     sq_m = float(input("Введите количество квадратных метров для покраски: "))
@@ -268,6 +385,7 @@ def paint_calculation():
     print("Количество 5л банок: ", quant_5l_paint, "шт", "\nКоличество часов на работу: ", work_hours, "часов",
           "\nСтоимость краски: ", paint_cost, "грн", "\nСтоимость работы: ", work_cost, "грн", "\nИТОГО: ", total_cost,
           "грн")
+    main()
 def get_sales_calc_tax():
     x = float(input("Введите сумму продажи: "))
     fed = x*0.05
@@ -284,6 +402,7 @@ def tax_sales_calc_():
 def sales_tax_calculate():
     amount = 0
     print = tax_sales_calc_()
+    main()
 
 def foot_convert():
     foot = float(input("Введите расстояние в километрах:"))
@@ -293,6 +412,7 @@ def foot_convert():
 def foot_inch_convert():
     foot, inch = foot_convert()
     print("Длинна в футах: ", foot, "\nДлина в дюймах:", inch)
+    main()
 
 def math_test():
     import random
@@ -305,21 +425,24 @@ def math_test():
         print("Поздравляем, ответ верный!")
     else:
         print("\n\t", num1, "\n+\t", num2, "\n=\t", total)
+    main()
 
 def max_of_two():
     num1 = int(input("Введите число 1: "))
     num2 = int(input("Введите число 2: "))
     max_ = max(num1, num2)
     print(max_)
+    main()
 
 def falling_distance():
-    print("СЕКУНДА\t\t\tМЕТРОВ ПОЛЕТА")
-    print("*" * 25)
-    for time_s in range(1, 11, 1):
-        time_sec = time_s
-        g = 9.8
-        distance = 1 / 2 * (g * (time_sec ** 2))
-        print(time_sec, "\t\t\t\t", round(distance, 2))
+        print("СЕКУНДА\t\t\tМЕТРОВ ПОЛЕТА")
+        print("*" * 25)
+        for time_s in range(1, 11, 1):
+            time_sec = time_s
+            g = 9.8
+            distance = 1 / 2 * (g * (time_sec ** 2))
+            print(time_sec, "\t\t\t\t", round(distance, 2))
+        main()
 
 def cynetic(m,v):
     energy = 1/2*(m*(v**2))
@@ -330,6 +453,7 @@ def cynetic_energy_calc():
     speed = float(input("Введите скорость, м\с: "))
     energy = cynetic(mass, speed)
     print("Кинетическая энергия: ", round(energy, 2))
+    main()
 
 def calc_aver_():
     a = int(input("Введите оценку 1: "))
@@ -359,6 +483,7 @@ def aver_grade():
         grade = determine_grade(num)
         print(num, grade)
     print("Средний балл: ", average)
+    main()
 
 def chet_nechet_count():
     import random
@@ -374,3 +499,16 @@ def chet_nechet_count():
             else:
                 nechet += 1
     print("Количество чётных: ", chet, "\nКоличество нечётных: ", nechet, "\nКоличество сгенерированных чисел: ", total)
+    main()
+def simple_figure_calc():
+    figure = int(input("Введите целое число: "))
+    defin = 0
+    for num in range(2, figure + 1, 1):
+        middle = figure % num
+        if middle == 0:
+            defin += 1
+    if defin > 1:
+        print("Число не является простым")
+    else:
+        print("Число является простым")
+    main()

@@ -7,5 +7,5 @@ def falling_distance():
         distance = 1 / 2 * (g * (time_sec ** 2))
         print(time_sec, "\t\t\t\t", round(distance, 2))
 
-
+falling_distance()
 
