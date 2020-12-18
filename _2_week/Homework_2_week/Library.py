@@ -20,6 +20,7 @@ def menu():
     print("15. Узор-2", "\t\t\t\t\t\t\t\t\t30.Средний балл и его уровень")
     print("\t\t\t\t\t\t\t\t\t\t\t31.Счётчик четных/нечетных чисел")
     print("\t\t\t\t\t\t\t\t\t\t\t32.Простые числа")
+    print("\t\t\t\t\t\t\t\t\t\t\t33. Список простых чисел от 0 до 100")
     print("0. ВЫХОД")
 def main():
     choice = int(input("Выберите задание на проверку: "))
@@ -87,6 +88,8 @@ def main():
         chet_nechet_count()
     elif choice == 32:
         simple_figure_calc()
+    elif choice == 33:
+        simple_fig_list()
     elif choice == 0:
         print("До свидания!")
 
@@ -500,7 +503,7 @@ def chet_nechet_count():
                 nechet += 1
     print("Количество чётных: ", chet, "\nКоличество нечётных: ", nechet, "\nКоличество сгенерированных чисел: ", total)
     main()
-def simple_figure_calc():
+def simple_figure_calc(num):
     figure = int(input("Введите целое число: "))
     defin = 0
     for num in range(2, figure + 1, 1):
@@ -511,4 +514,22 @@ def simple_figure_calc():
         print("Число не является простым")
     else:
         print("Число является простым")
+        return num
     main()
+
+def list_simple(x):
+    count = 0
+    for num in range(2,x+1,1):
+        simp = x%num
+        if simp == 0:
+            count += 1
+    if count < 2:
+        x = num
+        return x
+
+def simple_fig_list():
+    for num in range(2, 101, 1):
+        list_simple(num)
+        x = list_simple(num)
+        if x != None:
+            print(x, end=" ")
