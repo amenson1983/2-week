@@ -1,4 +1,4 @@
-from _2_week.Homework_2_week.future_cash import fut_cah_calc
+
 
 
 def menu():
@@ -26,6 +26,7 @@ def menu():
     print("\t\t\t\t\t\t\t\t\t\t\t33. Список простых чисел от 0 до 100")
     print("\t\t\t\t\t\t\t\t\t\t\t34. Расчет будующей стоимости")
     print("0. ВЫХОД")
+
 def main():
     choice = int(input("Выберите задание на проверку: "))
     if choice == 1:
@@ -94,7 +95,7 @@ def main():
         simple_figure_calc()
     elif choice == 33:
         simple_fig_list()
-    elif choice == 33:
+    elif choice == 34:
         fut_cah_calc()
     elif choice == 0:
         print("До свидания!")
@@ -539,7 +540,16 @@ def simple_fig_list():
         x = list_simple(num)
         if x != None:
             print(x, end=" ")
+    main()
 
 def future_cash_(amount, months, rate):
     future_amount = amount*((months+rate)**2)
     return future_amount
+def fut_cah_calc():
+    amount = float(input("Введите текущую сумму: "))
+    months = float(input("Введите количество месяцев: "))
+    rate_ = float(input("Введите ежемесячную процентрую ставку: "))
+    rate = rate_ / 100
+    future_cash = future_cash_(amount, months, rate)
+    print(future_cash)
+    main()
